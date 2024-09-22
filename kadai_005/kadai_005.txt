@@ -1,0 +1,44 @@
+
+mt-y8@▒▒▒Yprivate MINGW64 ~
+$ mkdir git_challenge
+
+mt-y8@▒▒▒Yprivate MINGW64 ~
+$ cd git_challenge
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/mt-y8/git_challenge/.git/
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ echo "" >> hello_world.txt
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ vi hello_world.txt
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 9045263] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ vi hello_world.txt
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 80664d7] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+mt-y8@▒▒▒Yprivate MINGW64 ~/git_challenge (main)
+$ git log --oneline
+80664d7 (HEAD -> main) 日本語訳を追記
+9045263 hello_world.txtを追加
+
